@@ -71,7 +71,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
           Container(
             padding: EdgeInsets.all(20),
             child: Text(
-              'Adjust your meal selection accordingly .',
+              'Adjust your meal selection accordingly pleaseeeeeee kindly .',
               style: Theme.of(context).textTheme.title,
             ),
           ),
@@ -80,7 +80,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
               children: <Widget>[
                 _buildSwitchListTile(
                   'Gluten-free',
-                  'Only include gluten-free meals.',
+                  'Only include gluten-free meals in your diet .',
                   _glutenFree,
                   (newValue) {
                     setState(
@@ -134,3 +134,54 @@ class _FiltersScreenState extends State<FiltersScreen> {
     );
   }
 }
+
+//below code is wrong
+hild: Text(
+            'You have no favorites yetttttttttt - start adding some more!'),
+      );
+    } else {
+      return ListView.builder(
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            title: favoriteMeals[index].title,
+            imageUrl: favoriteMeals[index].imageUrl,
+            duration: favoriteMeals[index].duration,
+            affordability: favoriteMeals[index].affordability,
+            complexity: favoriteMeals[index].complexity,
+          );
+        },
+        itemCount: favoriteMeals.length,
+      );hild: Text(
+            'You have no favorites yetttttttttt - start adding some more!'),
+      );
+    } else {
+      return ListView.builder(
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            title: favoriteMeals[index].title,
+            imageUrl: favoriteMeals[index].imageUrl,
+            duration: favoriteMeals[index].duration,
+            affordability: favoriteMeals[index].affordability,
+            complexity: favoriteMeals[index].complexity,
+          );
+        },
+        itemCount: favoriteMeals.length,
+      );hild: Text(
+            'You have no favorites yetttttttttt - start adding some more!'),
+      );
+    } else {
+      return ListView.builder(
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            title: favoriteMeals[index].title,
+            imageUrl: favoriteMeals[index].imageUrl,
+            duration: favoriteMeals[index].duration,
+            affordability: favoriteMeals[index].affordability,
+            complexity: favoriteMeals[index].complexity,
+          );
+        },
+        itemCount: favoriteMeals.length,
+      );

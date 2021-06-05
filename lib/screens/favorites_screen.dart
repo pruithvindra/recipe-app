@@ -32,3 +32,41 @@ class FavoritesScreen extends StatelessWidget {
     }
   }
 }
+
+
+
+
+//below code is wrong delete afterwards
+hild: Text(
+            'You have no favorites yetttttttttt - start adding some more!'),
+      );
+    } else {
+      return ListView.builder(
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            title: favoriteMeals[index].title,
+            imageUrl: favoriteMeals[index].imageUrl,
+            duration: favoriteMeals[index].duration,
+            affordability: favoriteMeals[index].affordability,
+            complexity: favoriteMeals[index].complexity,
+          );
+        },
+        itemCount: favoriteMeals.length,
+      );hild: Text(
+            'You have no favorites yetttttttttt - start adding some more!'),
+      );
+    } else {
+      return ListView.builder(
+        itemBuilder: (ctx, index) {
+          return MealItem(
+            id: favoriteMeals[index].id,
+            title: favoriteMeals[index].title,
+            imageUrl: favoriteMeals[index].imageUrl,
+            duration: favoriteMeals[index].duration,
+            affordability: favoriteMeals[index].affordability,
+            complexity: favoriteMeals[index].complexity,
+          );
+        },
+        itemCount: favoriteMeals.length,
+      );
